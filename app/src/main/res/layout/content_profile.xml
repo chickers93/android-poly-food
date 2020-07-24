@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/user_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/headerText"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/icielplanton"
+            android:text="Thông tin khách hàng" />
+
+        <RelativeLayout
+            style="@style/profileDetailsLayout"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:id="@+id/nameImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_man" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="Họ tên" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/nameImageView" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout
+            style="@style/profileDetailsLayout"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:id="@+id/mobileImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_smartphone" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:text="Số điện thoại" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/mobileImageView" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    style="@style/profileDetailsImage"
+                    android:src="@drawable/ic_message" />
+
+                <TextView
+                    style="@style/profileDetailsTextMain"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_toRightOf="@id/emailImageView" />
+
+                <ImageView
+                    android:id="@+id/img_alert1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_alert" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout
+            style="@style/profileDetailsLayout"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:id="@+id/addressImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_map" />
+
+            <TextView
+                android:id="@+id/diachi"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/addressImageView"
+                android:text="Địa chỉ" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/profileDetailsMiniText"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diachi"
+                android:layout_toRightOf="@id/addressImageView" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout
+            style="@style/profileDetailsLayout"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:id="@+id/dobImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_calendar" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/dobImageView"
+                android:text="Ngày sinh" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/dobImageView" />
+
+            <ImageView
+                android:id="@+id/img_alert2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_alert" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/border_bottom2"
+            android:fontFamily="@font/icielplanton"
+            android:gravity="center"
+            android:text="Thay đổi thông tin"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tv_signout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_bottom"
+            android:fontFamily="@font/icielplanton"
+            android:gravity="center"
+            android:text="Đăng xuất"
+            android:textAlignment="center"
+            android:textColor="#172737"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/icielplanton"
+            android:text="Phiên bản 1.0.0"
+            android:textAlignment="center"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/icielplanton"
+            android:text="Subee Poly Corporation"
+            android:textAlignment="center"
+            android:textColor="@color/gray" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

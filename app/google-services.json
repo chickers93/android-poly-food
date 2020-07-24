@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "627561606133",
+    "firebase_url": "https://polyfood-7fcd7.firebaseio.com",
+    "project_id": "polyfood-7fcd7",
+    "storage_bucket": "polyfood-7fcd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627561606133:android:893e3269106bc70cb2cebc",
+        "android_client_info": {
+          "package_name": "com.example.polyfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627561606133-3ibpnp67mhspi2uorvhf2p7ufr50hn67.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.polyfood",
+            "certificate_hash": "5ccdac51bf1e901e505ab258fa898da90ec3ce85"
+          }
+        },
+        {
+          "client_id": "627561606133-quge0s9r0k7ben91258s63qpk1sci847.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI5He5yXpm2806AgEH3Mvy_aQk4hfzxV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627561606133-quge0s9r0k7ben91258s63qpk1sci847.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
